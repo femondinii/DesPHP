@@ -1,1 +1,1 @@
-Meu front end ficou no arquivo "projetoJS"!
+Meu front end ficou no arquivo "projetoSoft"!
