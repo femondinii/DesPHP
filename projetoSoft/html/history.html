@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <script src="../js/history.js" defer></script>
+    <div class="menu">
+        <h1>Suite Store</h1>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="history.html">History</a></li>
+        </ul>
+    </div>
+    <div class="hpage">
+        <div class="rightpage">
+            <div id="customers">
+                <table id="history-table">
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Tax</th>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table><br>
+            </div>
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <span onclick="hideModal()">&times;</span><br>
+                    <table class="table-details">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Unit price</th>
+                                <th>Amount</th>
+                                <th>Tax</th>
+                            </tr>
+                        </thead>
+                        <tbody id="detail">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

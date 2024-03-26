@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suite Store</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <script src="../js/home.js" defer></script>
+    <div class="menu">
+        <h1>Suite Store</h1>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="history.html">History</a></li>
+        </ul>
+    </div>
+    <div class="page"> 
+        <div class="leftpage">
+            <form id="form">
+                <select id="hproduct" class="select-prod" required>
+                    <option value="">Products</option>
+                </select>
+                <input type="number" id="hamount" placeholder="Amount" required>
+                <input type="number" id="htax" placeholder="Tax" disabled>
+                <input type="number" id="hprice" placeholder="Price" disabled>
+                <input type="submit" id="add" onclick="saveCart()" value="Add Product">
+            </form><br>
+        </div>
+        <div class="rightpage">
+            <div id="customers">
+                <table id="tbl">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Amount</th>
+                            <th>Total</th> 
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table><br>
+            </div>
+            <div class="btt">
+                <form id="form-total">
+                    <label id="ttotal"></label>
+                </form>
+                <br>
+                <br>
+                <div id="button">
+                    <button id="cancel">Cancel</button>
+                    <button id="finish">Finish</button>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

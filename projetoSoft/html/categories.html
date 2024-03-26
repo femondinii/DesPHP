@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <script src="../js/category.js" defer></script>
+    <div class="menu">
+        <h1>Suite Store</h1>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="history.html">History</a></li>
+        </ul>
+    </div>
+    <div class="page">
+        <div class="leftpage">
+            <div class="pinput">
+                <form id="form">
+                    <input type="text" name="category" id="category" placeholder="Category" required><br>
+                    <input type="number" name="tax" id="tax" placeholder="Tax" maxlength="5" required><br>
+                    <input type="submit" name="send" value="Add Category" id="add" onclick="saveCategory()">
+                </form><br>
+            </div>
+        </div>
+        <div class="rightpage">
+            <div id="customers">
+                <table id="tabela">
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Category</th>
+                            <th>Tax</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>                    
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
